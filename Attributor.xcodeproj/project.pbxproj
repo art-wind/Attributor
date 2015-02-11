@@ -7,15 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332B7BAB1A8AF92B004F84EE /* ActivityDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332B7BA91A8AF92B004F84EE /* ActivityDetailCell.swift */; };
+		332B7BAC1A8AF92B004F84EE /* ActivityDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332B7BAA1A8AF92B004F84EE /* ActivityDetailCell.xib */; };
+		332B7BAE1A8AFCFF004F84EE /* GalleryPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332B7BAD1A8AFCFF004F84EE /* GalleryPicture.swift */; };
+		334114141A8A39E500582873 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334114131A8A39E500582873 /* FriendDetailViewController.swift */; };
+		3356F0B01A89F91900799461 /* DisplayImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356F0AF1A89F91900799461 /* DisplayImageController.swift */; };
+		3356F0B21A89FDEB00799461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3356F0B11A89FDEB00799461 /* Main.storyboard */; };
+		3356F0B41A8A053400799461 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356F0B31A8A053400799461 /* FriendViewController.swift */; };
+		3356F0B71A8A059C00799461 /* FriendTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356F0B51A8A059C00799461 /* FriendTableCell.swift */; };
+		3356F0B81A8A059C00799461 /* FriendTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3356F0B61A8A059C00799461 /* FriendTableCell.xib */; };
+		3356F0BC1A8A0F5000799461 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356F0BB1A8A0F5000799461 /* Person.swift */; };
+		337C82D61A8B4F5500E0F1D0 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C82D51A8B4F5500E0F1D0 /* DBManager.swift */; };
+		337C82D91A8B4FF500E0F1D0 /* PersonHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C82D81A8B4FF500E0F1D0 /* PersonHandler.swift */; };
+		337C82EF1A8B59C400E0F1D0 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337C82E41A8B590100E0F1D0 /* SQLite.framework */; };
+		337C82F11A8B59F600E0F1D0 /* SQLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 337C82E41A8B590100E0F1D0 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3394A1871A88E0AC00E3383E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394A1861A88E0AC00E3383E /* AppDelegate.swift */; };
-		3394A1891A88E0AC00E3383E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394A1881A88E0AC00E3383E /* ViewController.swift */; };
-		3394A18C1A88E0AC00E3383E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3394A18A1A88E0AC00E3383E /* Main.storyboard */; };
 		3394A18E1A88E0AC00E3383E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3394A18D1A88E0AC00E3383E /* Images.xcassets */; };
 		3394A1911A88E0AC00E3383E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3394A18F1A88E0AC00E3383E /* LaunchScreen.xib */; };
 		3394A19D1A88E0AC00E3383E /* AttributorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394A19C1A88E0AC00E3383E /* AttributorTests.swift */; };
+		3394A1A71A88E2A800E3383E /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394A1A61A88E2A800E3383E /* MessageTableViewController.swift */; };
+		3394A1AA1A88E38B00E3383E /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394A1A91A88E38B00E3383E /* MessageTableViewCell.swift */; };
+		3394A1AF1A88E53D00E3383E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394A1AE1A88E53D00E3383E /* Message.swift */; };
+		3394A1B61A88F48A00E3383E /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3394A1B51A88F48A00E3383E /* MessageTableViewCell.xib */; };
+		33B545F61A8B364E001B1A18 /* GalaryPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B545F41A8B364E001B1A18 /* GalaryPicCell.swift */; };
+		33B545F71A8B364E001B1A18 /* GalaryPicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B545F51A8B364E001B1A18 /* GalaryPicCell.xib */; };
+		33E0B2AC1A8B292D006B3596 /* GalaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0B2AB1A8B292D006B3596 /* GalaryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		337C82E31A8B590100E0F1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337C82DC1A8B590100E0F1D0 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC3773F319C8CBB3004FCF85;
+			remoteInfo = "SQLite iOS";
+		};
+		337C82E51A8B590100E0F1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337C82DC1A8B590100E0F1D0 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC3773FE19C8CBB3004FCF85;
+			remoteInfo = "SQLite iOS Tests";
+		};
+		337C82E71A8B590100E0F1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337C82DC1A8B590100E0F1D0 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC37741419C8CC2F004FCF85;
+			remoteInfo = "SQLite Mac";
+		};
+		337C82E91A8B590100E0F1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337C82DC1A8B590100E0F1D0 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC37741E19C8CC2F004FCF85;
+			remoteInfo = "SQLite Mac Tests";
+		};
+		337C82EC1A8B598300E0F1D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337C82DC1A8B590100E0F1D0 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3773F219C8CBB3004FCF85;
+			remoteInfo = "SQLite iOS";
+		};
 		3394A1971A88E0AC00E3383E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3394A1791A88E0AC00E3383E /* Project object */;
@@ -25,17 +79,48 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		337C82F01A8B59E200E0F1D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				337C82F11A8B59F600E0F1D0 /* SQLite.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		332B7BA91A8AF92B004F84EE /* ActivityDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailCell.swift; sourceTree = "<group>"; };
+		332B7BAA1A8AF92B004F84EE /* ActivityDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityDetailCell.xib; sourceTree = "<group>"; };
+		332B7BAD1A8AFCFF004F84EE /* GalleryPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryPicture.swift; sourceTree = "<group>"; };
+		334114131A8A39E500582873 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		3356F0AF1A89F91900799461 /* DisplayImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayImageController.swift; sourceTree = "<group>"; };
+		3356F0B11A89FDEB00799461 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3356F0B31A8A053400799461 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		3356F0B51A8A059C00799461 /* FriendTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableCell.swift; sourceTree = "<group>"; };
+		3356F0B61A8A059C00799461 /* FriendTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendTableCell.xib; sourceTree = "<group>"; };
+		3356F0BB1A8A0F5000799461 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		337C82D51A8B4F5500E0F1D0 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		337C82D81A8B4FF500E0F1D0 /* PersonHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonHandler.swift; sourceTree = "<group>"; };
+		337C82DC1A8B590100E0F1D0 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		3394A1811A88E0AC00E3383E /* Attributor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attributor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3394A1851A88E0AC00E3383E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3394A1861A88E0AC00E3383E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3394A1881A88E0AC00E3383E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3394A18B1A88E0AC00E3383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3394A18D1A88E0AC00E3383E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3394A1901A88E0AC00E3383E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3394A1961A88E0AC00E3383E /* AttributorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3394A19B1A88E0AC00E3383E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3394A19C1A88E0AC00E3383E /* AttributorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributorTests.swift; sourceTree = "<group>"; };
+		3394A1A61A88E2A800E3383E /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		3394A1A91A88E38B00E3383E /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		3394A1AE1A88E53D00E3383E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3394A1B51A88F48A00E3383E /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		33B545F41A8B364E001B1A18 /* GalaryPicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalaryPicCell.swift; sourceTree = "<group>"; };
+		33B545F51A8B364E001B1A18 /* GalaryPicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalaryPicCell.xib; sourceTree = "<group>"; };
+		33E0B2AB1A8B292D006B3596 /* GalaryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalaryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				337C82EF1A8B59C400E0F1D0 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +142,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		337C82D71A8B4FE400E0F1D0 /* DBHandler */ = {
+			isa = PBXGroup;
+			children = (
+				337C82D81A8B4FF500E0F1D0 /* PersonHandler.swift */,
+			);
+			name = DBHandler;
+			sourceTree = "<group>";
+		};
+		337C82DD1A8B590100E0F1D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				337C82E41A8B590100E0F1D0 /* SQLite.framework */,
+				337C82E61A8B590100E0F1D0 /* SQLite iOS Tests.xctest */,
+				337C82E81A8B590100E0F1D0 /* SQLite.framework */,
+				337C82EA1A8B590100E0F1D0 /* SQLite Mac Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3394A1781A88E0AC00E3383E = {
 			isa = PBXGroup;
 			children = (
 				3394A1831A88E0AC00E3383E /* Attributor */,
 				3394A1991A88E0AC00E3383E /* AttributorTests */,
 				3394A1821A88E0AC00E3383E /* Products */,
+				337C82DC1A8B590100E0F1D0 /* SQLite.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +183,15 @@
 		3394A1831A88E0AC00E3383E /* Attributor */ = {
 			isa = PBXGroup;
 			children = (
+				337C82D71A8B4FE400E0F1D0 /* DBHandler */,
+				3394A1B01A88E6EC00E3383E /* View */,
+				3394A1AB1A88E39100E3383E /* Models */,
+				3394A1A81A88E2B100E3383E /* ViewController */,
 				3394A1861A88E0AC00E3383E /* AppDelegate.swift */,
-				3394A1881A88E0AC00E3383E /* ViewController.swift */,
-				3394A18A1A88E0AC00E3383E /* Main.storyboard */,
 				3394A18D1A88E0AC00E3383E /* Images.xcassets */,
 				3394A18F1A88E0AC00E3383E /* LaunchScreen.xib */,
 				3394A1841A88E0AC00E3383E /* Supporting Files */,
+				3356F0B11A89FDEB00799461 /* Main.storyboard */,
 			);
 			path = Attributor;
 			sourceTree = "<group>";
@@ -112,6 +221,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3394A1A81A88E2B100E3383E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3394A1A61A88E2A800E3383E /* MessageTableViewController.swift */,
+				3356F0AF1A89F91900799461 /* DisplayImageController.swift */,
+				3356F0B31A8A053400799461 /* FriendViewController.swift */,
+				334114131A8A39E500582873 /* FriendDetailViewController.swift */,
+				33E0B2AB1A8B292D006B3596 /* GalaryVC.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3394A1AB1A88E39100E3383E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3394A1AE1A88E53D00E3383E /* Message.swift */,
+				3356F0BB1A8A0F5000799461 /* Person.swift */,
+				332B7BAD1A8AFCFF004F84EE /* GalleryPicture.swift */,
+				337C82D51A8B4F5500E0F1D0 /* DBManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3394A1B01A88E6EC00E3383E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3394A1A91A88E38B00E3383E /* MessageTableViewCell.swift */,
+				3394A1B51A88F48A00E3383E /* MessageTableViewCell.xib */,
+				3356F0B51A8A059C00799461 /* FriendTableCell.swift */,
+				3356F0B61A8A059C00799461 /* FriendTableCell.xib */,
+				332B7BA91A8AF92B004F84EE /* ActivityDetailCell.swift */,
+				332B7BAA1A8AF92B004F84EE /* ActivityDetailCell.xib */,
+				33B545F41A8B364E001B1A18 /* GalaryPicCell.swift */,
+				33B545F51A8B364E001B1A18 /* GalaryPicCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +269,12 @@
 				3394A17D1A88E0AC00E3383E /* Sources */,
 				3394A17E1A88E0AC00E3383E /* Frameworks */,
 				3394A17F1A88E0AC00E3383E /* Resources */,
+				337C82F01A8B59E200E0F1D0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				337C82ED1A8B598300E0F1D0 /* PBXTargetDependency */,
 			);
 			name = Attributor;
 			productName = Attributor;
@@ -179,6 +328,12 @@
 			mainGroup = 3394A1781A88E0AC00E3383E;
 			productRefGroup = 3394A1821A88E0AC00E3383E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 337C82DD1A8B590100E0F1D0 /* Products */;
+					ProjectRef = 337C82DC1A8B590100E0F1D0 /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3394A1801A88E0AC00E3383E /* Attributor */,
@@ -187,13 +342,48 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		337C82E41A8B590100E0F1D0 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 337C82E31A8B590100E0F1D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		337C82E61A8B590100E0F1D0 /* SQLite iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite iOS Tests.xctest";
+			remoteRef = 337C82E51A8B590100E0F1D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		337C82E81A8B590100E0F1D0 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 337C82E71A8B590100E0F1D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		337C82EA1A8B590100E0F1D0 /* SQLite Mac Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite Mac Tests.xctest";
+			remoteRef = 337C82E91A8B590100E0F1D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		3394A17F1A88E0AC00E3383E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3394A18C1A88E0AC00E3383E /* Main.storyboard in Resources */,
+				3394A1B61A88F48A00E3383E /* MessageTableViewCell.xib in Resources */,
+				3356F0B21A89FDEB00799461 /* Main.storyboard in Resources */,
 				3394A1911A88E0AC00E3383E /* LaunchScreen.xib in Resources */,
+				332B7BAC1A8AF92B004F84EE /* ActivityDetailCell.xib in Resources */,
+				33B545F71A8B364E001B1A18 /* GalaryPicCell.xib in Resources */,
+				3356F0B81A8A059C00799461 /* FriendTableCell.xib in Resources */,
 				3394A18E1A88E0AC00E3383E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +402,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3394A1891A88E0AC00E3383E /* ViewController.swift in Sources */,
+				337C82D91A8B4FF500E0F1D0 /* PersonHandler.swift in Sources */,
+				3394A1AA1A88E38B00E3383E /* MessageTableViewCell.swift in Sources */,
+				33B545F61A8B364E001B1A18 /* GalaryPicCell.swift in Sources */,
+				3394A1AF1A88E53D00E3383E /* Message.swift in Sources */,
+				332B7BAE1A8AFCFF004F84EE /* GalleryPicture.swift in Sources */,
+				3394A1A71A88E2A800E3383E /* MessageTableViewController.swift in Sources */,
+				3356F0B41A8A053400799461 /* FriendViewController.swift in Sources */,
+				3356F0B01A89F91900799461 /* DisplayImageController.swift in Sources */,
+				3356F0BC1A8A0F5000799461 /* Person.swift in Sources */,
+				3356F0B71A8A059C00799461 /* FriendTableCell.swift in Sources */,
+				334114141A8A39E500582873 /* FriendDetailViewController.swift in Sources */,
 				3394A1871A88E0AC00E3383E /* AppDelegate.swift in Sources */,
+				33E0B2AC1A8B292D006B3596 /* GalaryVC.swift in Sources */,
+				332B7BAB1A8AF92B004F84EE /* ActivityDetailCell.swift in Sources */,
+				337C82D61A8B4F5500E0F1D0 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +431,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		337C82ED1A8B598300E0F1D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 337C82EC1A8B598300E0F1D0 /* PBXContainerItemProxy */;
+		};
 		3394A1981A88E0AC00E3383E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3394A1801A88E0AC00E3383E /* Attributor */;
@@ -236,14 +444,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3394A18A1A88E0AC00E3383E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3394A18B1A88E0AC00E3383E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3394A18F1A88E0AC00E3383E /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -339,6 +539,7 @@
 				INFOPLIST_FILE = Attributor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,6 +550,7 @@
 				INFOPLIST_FILE = Attributor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -405,6 +607,7 @@
 				3394A1A21A88E0AC00E3383E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3394A1A31A88E0AC00E3383E /* Build configuration list for PBXNativeTarget "AttributorTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +616,7 @@
 				3394A1A51A88E0AC00E3383E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
