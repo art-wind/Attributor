@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class MessageTableViewCell: UITableViewCell {
     @IBOutlet var imageIcon: UIImageView!
     @IBOutlet var nameLabel: UILabel!

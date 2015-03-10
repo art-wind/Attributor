@@ -13,6 +13,7 @@ class Person{
     var gender:String="";
     var imageIcon:String = "";
     var registerTime:NSDate;
+    
     init(personName:String,sortedString:String,gender:String,imageIcon:String,registerTime:NSDate){
         self.personName = personName
         self.sortedString = sortedString

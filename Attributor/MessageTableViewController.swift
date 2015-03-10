@@ -28,9 +28,8 @@ class MessageTableViewController: UITableViewController {
         msg1.setAttributes(messenger: "君君", sendingTime: "21:00", message: "不是特别懂sss")
         self.messages.append(msg1)
         
-//        tableView.registerNib(UINib(nibName: "MessageTableViewCell",bundle:nil), forCellReuseIdentifier: "Message Cell")
-        
-        println("initializtion over")
+//       
+    
        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

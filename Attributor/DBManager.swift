@@ -9,28 +9,20 @@
 import Foundation
 import SQLite
 class DBManager {
-    let db = Database("path/to/db.sqlite3")
-    var  databasePath:String = ""
+    var shareDB:Database?
     
-    func createDB() {
-        let users = db["users"]
-        let id = Expression<Int>("id")
-        let email = Expression<String>("email")
-        let balance = Expression<Double>("balance")
-        let verified = Expression<Bool>("verified")
-        
-        
-        
-        db.create(table: users) { t in     // CREATE TABLE "users" (
-            t.column(id, primaryKey: true) //     "id" INTEGER PRIMARY KEY NOT NULL,
-            t.column(email, unique: true)  //     "email" TEXT UNIQUE NOT NULL,
-            t.column(name)                 //     "name" TEXT
-        }                                  // )
+   
+    init(){
+        var path = "/Users/xubill/workspace/xcode/Attributor/Attributor"
+//        var path = NSSearchPathForDirectoriesInDomains(
+//            .DocumentDirectory, .UserDomainMask, true
+//        ).first as String
+        let db = Database("\(path)/db.sqlite3")
+        shareDB = db
     }
-    func getSharedInstance() ->DBManager {
-        return self
+    func getSharedInstance() -> Database {
+        return shareDB!
     }
-    func saveData() {
-        
-    }
+//
+//    
 }

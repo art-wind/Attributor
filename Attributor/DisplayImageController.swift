@@ -7,16 +7,24 @@
 //
 
 import UIKit
-
+import CoreData
 class DisplayImageController: UITableViewController {
     var imageToBeDisplayed:String = "default"
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
     @IBOutlet var DisplayImage: UIImageView!
+    let frc:NSFetchedResultsController?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         DisplayImage.image = UIImage(named:imageToBeDisplayed)
         DisplayImage.layer.cornerRadius = 5;
         DisplayImage.layer.masksToBounds = true;
-
+        
+        
+//        let entity = NSEntityDescription.entityForName("Photo", inManagedObjectContext:self)
+       
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

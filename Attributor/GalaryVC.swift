@@ -33,7 +33,7 @@ class GalaryVC: UICollectionViewController {
         self.collectionView!.registerClass(GalaryPicCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
        self.collectionView!.registerNib(UINib(nibName: NibName, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
-        
+    
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

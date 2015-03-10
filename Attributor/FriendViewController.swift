@@ -22,39 +22,60 @@ class FriendViewController: UITableViewController {
         super.viewDidLoad()
         var tmpPersons = [Person]()
         var person0 = Person(personName: "曹旭阳",sortedString:"caoxuyang",gender: "Male", imageIcon: "icon0", registerTime: NSDate())
-        tmpPersons.append(person0)
-        
         var person1 = Person(personName: "曹畅",sortedString:"caochang", gender: "Male", imageIcon:"ic1", registerTime: NSDate())
-        tmpPersons.append(person1)
-        
-        
-        
         var person2 = Person(personName: "许衎",sortedString:"xukan", gender: "Male", imageIcon:"schwarz", registerTime: NSDate())
-        tmpPersons.append(person2)
         var person3 = Person(personName: "封江涛",sortedString:"fengjiangtao", gender: "Male", imageIcon:"ic4", registerTime: NSDate())
-        tmpPersons.append(person3)
         var person4 = Person(personName: "李孟桐",sortedString:"limengtong", gender: "Male", imageIcon:"ic2", registerTime: NSDate())
-        tmpPersons.append(person4)
         
-    
-        persons = tmpPersons.sorted{$0.sortedString<$1.sortedString}
-        var headerChar:Character = "A"
+        tmpPersons.append(person0)
+        tmpPersons.append(person1)
+//      tmpPersons.append(person2)
+        tmpPersons.append(person3)
+//      tmpPersons.append(person4)
         
-        for person in persons {
-            var handlingChar:Character =  Array(person.sortedString.uppercaseString)[0]
-            println("HandlingCharater: \(handlingChar)")
-            
-            if handlingChar == headerChar  {
-               nameMapping[handlingChar]!.append(person)
-            }
-            else{
-                var personArray = [Person]()
-                personArray.append(person)
-                nameMapping[handlingChar] = personArray
-                headerCharArray.append(handlingChar)
-            }
-            headerChar = handlingChar
-        }
+        
+        
+        
+//        self.searchDisplayController = UISearchController.initialize()
+//        self.searchDisplayController = fsvc
+//        self.tableView.tableHeaderView = self.searchDisplayController?.searchBar
+//        self.definesPresentationContext = true
+//        PersonHandler.createPersonTable()
+//        PersonHandler.insertPerson(personToBeInserted: person4)
+//
+//        var ret = [Person]()
+//        ret = PersonHandler.getPersonByID()
+//        
+//        println("1: \(persons.count)")
+//        
+//        for retP in ret {
+//            
+////            println("A person here")
+//            tmpPersons.append(retP)
+//        }
+//        println("2: \(persons.count)")
+//        println("initializtion over")
+//        
+//        
+//        
+//        persons = tmpPersons.sorted{$0.sortedString<$1.sortedString}
+//        var headerChar:Character = "A"
+//        
+//        for person in persons {
+//            var handlingChar:Character =  Array(person.sortedString.uppercaseString)[0]
+////            println("HandlingCharater: \(handlingChar)")
+//            
+//            if handlingChar == headerChar  {
+//               nameMapping[handlingChar]!.append(person)
+//            }
+//            else{
+//                var personArray = [Person]()
+//                personArray.append(person)
+//                nameMapping[handlingChar] = personArray
+//                headerCharArray.append(handlingChar)
+//            }
+//            headerChar = handlingChar
+//        }
         
 //        tableView.registerNib(UINib(nibName: NibClassName,bundle:nil), forCellReuseIdentifier: cellIdentifier)
         
@@ -151,9 +172,7 @@ class FriendViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        println("Prep over")
-        if segue.identifier == "DisplayFriendDetail" {
+        if segue.identifier == "Do Something" {
             
         }
         // Get the new view controller using [segue destinationViewController].
